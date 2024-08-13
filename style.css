@@ -81,7 +81,6 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   opacity: 1;
-  /* Make sure the section is visible by default */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -116,14 +115,13 @@ h1 {
 
 .about-me-container:hover .circle-frame {
   transform: scale(1.1);
-  /* Slightly zoom in the image */
 }
 
 .about-me-container:hover .about-me-text {
   transform: translateY(-10px);
-  /* Move the text slightly upwards */
+  
   opacity: 0.9;
-  /* Slightly reduce the opacity */
+  
 }
 
 
@@ -324,4 +322,10 @@ p {
 
 section.visible {
   animation: slideIn 1s ease-in-out forwards;
+}
+.project img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4pxs;
 }
